@@ -177,7 +177,7 @@ if live_pred == 1.:                                                    # only ru
         distance = math.sqrt(((abs(location_array_live_data[i][0])-abs(location_array_live_data[j][0]))*69.2)**2 + ((abs(location_array_live_data[i][1])-abs(location_array_live_data[j][1]))*69.172)**2)      # Calculate the distance between two lat,long by using the distance formula and the fact that 1 degree of latitude is 69.2 miles and 1 degree of longitude is 69.172 miles                                               
         if distance <= 50.:     # check if the tweets are within 50 miles between the tweets, multiply by 10% prob
           probability *= 1.1
-          if distance <= 25.:   # check if the tweets are within 25 miles between the tweets, multiply by 20% prob
+          if distance <= 25.:    # check if the tweets are within 25 miles between the tweets, multiply by 20% prob
             probability *= 1.2
             if distance <= 10.:   # check if the tweets are within 10 miles between the tweets, multiply by 20% prob
               probability *= 1.2
